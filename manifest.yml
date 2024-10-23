@@ -1,3 +1,14 @@
 type: visualizations
 name: SingleValueHTML-Github-
 version: 1.0.0
+description: A custom visualization for Looker.
+author: brechtv
+license: MIT
+homepage: https://github.com/crschecha-siucom/Looker_VisualizationSingleValueHTML
+repository: https://github.com/crschecha-siucom/Looker_VisualizationSingleValueHTML
+keywords: visualization
+icon: http://dashboards.siucomgt.com/wp-content/uploads/2024/10/icon_singlevaluehtml.png
+scripts:
+  single_value_with_html_template.js
+templates:
+  /example/example_html_template.html
