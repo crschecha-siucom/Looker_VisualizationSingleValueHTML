@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 8px;
+        font-family: Myriad Pro;
+        color: #ffd100;
+        background-color: #ffffff;
+    }
+
+    th {
+        font-size: calc(1px + 3vw);
+        color: #ffd100;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .table-header {
+        font-size: calc(20px + 3vw);
+        color: #003a5c;
+        width: 100%;
+    }
+
+    .day-label {
+        font-size: calc(6px + 2.5vw);
+        color: #003a5c;
+    }
+
+    .day-label span {
+        font-weight: bold;
+    }
+
+    .rain-data {
+        font-size: calc(6px + 2.5vw);
+        color: #003a5c;
+    }
+
+    .rain-data span {
+        color: #f4b400;
+    }
+</style>
+
+<table>
+    <tr>
+        <th colspan="2">
+            <span class="table-header">
+                <strong>Lluvia en Litros</strong>
+            </span>
+        </th>
+    </tr>
+    <tr>
+        <th class="day-label">
+            <p><strong>El día de </strong><span><strong>Hoy</strong></span></p>
+        </th>
+        <th class="day-label">
+            <p><strong>El día de </strong><span><strong>Ayer</strong></span></p>
+        </th>
+    </tr>
+    <tr>
+        <td class="rain-data">
+            <p><strong>{{ lluvia_hoy }}</strong></span></p>
+        </td>
+        <td class="rain-data">
+            <p><strong>{{ lluvia_ayer }}</strong></span></p>
+        </td>
+    </tr>
+    <tr>
+        <td class="rain-data">
+            <p><strong>Litros</strong></p>
+        </td>
+        <td class="rain-data">
+            <p><strong>Litros</strong></p>
+        </td>
+    </tr>
+</table>

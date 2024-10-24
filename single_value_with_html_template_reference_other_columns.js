@@ -34,9 +34,20 @@ looker.plugins.visualizations.add({
             const columnRexExpByRef = new RegExp("{{( *)" + firstRowFields[field].name + "( *)}}", "g");
             const columnValue = LookerCharts.Utils.filterableValueForCell(firstRow[firstRowFields[field].name]);
             
-            htmlTemplate = htmlTemplate.replace(columnRexExpSingleVal, columnValue);
-            htmlTemplate = htmlTemplate.replace(columnRexExpNumeric, columnValue);
-            htmlTemplate = htmlTemplate.replace(columnRexExpByRef, columnValue);
+
+			
+			if (isNaN(parseFloat(columnValue)) || !isFinite(columnValue)) {
+        // Handle non-numeric values (e.g., display an error message or leave the value unchanged)
+        htmlTemplate = htmlTemplate.replace(columnRexExpSingleVal, columnValue);
+        htmlTemplate = htmlTemplate.replace(columnRexExpNumeric, columnValue);
+        htmlTemplate = htmlTemplate.replace(columnRexExpByRef, columnValue);   
+
+      } else {
+        const roundedColumnValue = parseFloat(columnValue).toFixed(2);
+        htmlTemplate = htmlTemplate.replace(columnRexExpSingleVal, roundedColumnValue);
+        htmlTemplate = htmlTemplate.replace(columnRexExpNumeric, roundedColumnValue);
+        htmlTemplate = htmlTemplate.replace(columnRexExpByRef, roundedColumnValue);
+      }
         }
 
         element.innerHTML = htmlTemplate;
