@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style type="text/css">
+
+    .table2 td, .table2 th {
+	line-height: 1.0;
+    white-space: nowrap; /* This line prevents text wrapping */
+  }
+.table2 th {
+  /* ... other styles */
+  padding: 5px; /* Add some padding on both sides */
+}
+</style>
+
+<div style="display: flex; justify-content: center;align-items: center;">
+<table class="table2"  >
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff;">
+    <th rowspan="3">
+	<img alt="Icono Siucom" style="width: 100%; max-width: calc(1px + 10.5vw); height: auto; float: left; " src="http://dashboards.siucomgt.com/wp-content/uploads/2024/10/SIUCOM-04.png"  >
+	<th>
+	<td>
+		<span title="El primer dato refleja el llenado de la lluvia de hoy respecto al máximo de lluvia en el año. El segundo dato es la lluvia de hoy. Mientras qué él tercero nos dice la lluvia de ayer." style="font-family: Myriad Pro; color: #ffd100;font-size: calc(1px + 3vw);  ">
+	<p style="font-size: calc(1px + 4vw); color:#00b3be;width:100%"> <strong>   Ha llovido un total de</strong></p>
+	</span>
+	</td>
+  </tr>
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff;  ">
+    <td></td>
+	<td><p style="font-size: calc(1px + 4vw);  color: #f4b400;"><strong>{{ lluvia_anual }}</strong></span></p></td>
+  </tr>
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff;">
+    <th ></th>
+	<td><p style="font-size: calc(1px + 4vw);  color: #00b3be;"><strong>Litros</strong></p></td>
+  </tr>
+</table>
+</div>

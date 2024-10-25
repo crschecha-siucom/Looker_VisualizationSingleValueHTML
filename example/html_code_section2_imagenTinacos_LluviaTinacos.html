@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style type="text/css">
+
+ 
+  /* New styles for image positioning */
+  .table2 th img.float-left {
+    float: left !important; /* Make the image float to the left */
+    margin-right: 10px; /* Add some margin between image and text */
+	vertical-align: top; /* Align image to the top */
+  }
+  .table2 th img.float-right {
+    float: right !important;
+    margin-left: 10px; /* Add some margin between image and text */
+	vertical-align: top; /* Align image to the top */
+  }
+  
+</style>
+
+<div style="display: flex; justify-content: center;align-items: center;">
+<table class="table2"  >
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff; ; ">
+    <th rowspan="3"  >
+	<img src="https://dashboards.siucomgt.com/wp-content/uploads/2024/10/Gemini_Generated_Image_7jy0u67jy0u67jy0.jpg" alt="Icono de tinaco" class="float-left" style="width: calc(80px + 15vw); height: calc(1px + 20vw);">
+	</th>
+	<td>	
+	<span title="En esta sección se indica la cantidad total de lluvia caída durante el año es equivalente a llenar los tinacos totales en 1,100 litros cada uno. Esto nos da una idea más concreta del volumen de agua que hemos recibido." style="font-family: Myriad Pro; color: #ffd100;font-size: calc(1px + 3vw);  ">  
+	<p style="font-size: calc(1px + 5vw); margin: 0; color:#00b3be;width:100%"> <strong>   Durante este año han caído</strong></p>
+	</span>
+	</td>
+	<th rowspan="3" >
+	<img alt="Icono Siucom" class="float-right" style="width: 100%; max-width: calc(1px + 15.5vw); height: auto;" src="http://dashboards.siucomgt.com/wp-content/uploads/2024/10/SIUCOM-04.png">
+	</th>
+ </tr>
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff;  ">
+	<td><p style="font-size: calc(1px + 5vw);  color: #f4b400;"><strong>{{ tinaco_hoy2 }}</strong></span></p></td>
+  </tr>
+  <tr style="text-align: center;  font-family: Myriad Pro; color: #ffd100; background-color: #ffffff;  ">
+	<td>
+	<p style="font-size: calc(1px + 5vw) ; margin: 0; color: #f4b400;"><strong>Tinacos <span style="color: #00b3be"> de 1,100 Litros cada uno</span></strong></p>
+	</td>
+  </tr>
+</table>
+</div>
